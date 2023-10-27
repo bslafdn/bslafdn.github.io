@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: gray;
+}
+.navigator {
+  margin-bottom: 50px;
+}
+
+.text {
+  margin-right: 40%;
+}
+h2 {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.header {
+  margin-left: 0px;
+  margin-top: 90px;
+  margin-bottom: 10px;
+}
+.video-container iframe {
+  margin-left: 0px;
+  width: 400px;
+  height: 300px;
+}
+.instagram-logo {
+  padding: 20em;
+}
+.insta-logo img {
+  margin-top: 2em;
+  width: 1.5em;
+  height: auto;
+}
+.title {
+  width: 60%;
+}
+.title img {
+  width: 24em;
+  height: auto;
+}
+@media screen and (max-width: 600px)
+{
+  .title {
+    width: 95%;
+  }
+  .title img {
+    width: 15em;
+    height: auto;
+  }
+  .body-text {
+    width: 100%;
+    font-size: .8em;
+  }
+  .about-text {
+    width: 100%;
+    font-size: 3vw;
+  }
+}
+.margin {
+  margin-top: 0;
+  margin-left: 50px;
+}
+
+
+
+/* video sizing */
+/* full size */
+@media screen and (max-width: 992px) {
+  .video-container iframe {
+    margin-left: 0px;
+    width: 400px;
+    height: 300px;
+  }
+  .margin {
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+.img-list img {
+  width: 300px;
+  height: 225px;
+  object-fit: cover;
+  
+
+}
+}
+/* cell phone size */
+@media screen and (max-width: 600px) {
+  .video-container iframe {
+    margin-left: 0px;
+    width: 200px;
+    height: 150px;
+  }
+  .margin {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .text {
+    margin-right: 0px;
+  }
+.img-list img {
+  width: 175px;
+  height: 131.25px;
+  object-fit: cover;
+  
+
+}
+}
+
+/* lightbox code */
+/*.img-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+*/
+
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+
+  transition: all 0.3s ease-out;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.lightbox-img {
+  width: 95%;
+  height: 95%;
+  object-fit: contain;
+
+  transform: translateY(20px);
+
+  transition: all 0.3s ease-out;
+}
+
+.lightbox.show .lightbox-img {
+  transform: translateY(0);
+}
