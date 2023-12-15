@@ -46,6 +46,11 @@ h2 {
 .title img {
   width: 24em;
   height: auto;
+
+}
+.title img2 {
+  width: 12em; 
+  height: auto; 
 }
 @media screen and (max-width: 600px)
 {
@@ -69,6 +74,7 @@ h2 {
   margin-top: 0;
   margin-left: 50px;
 }
+
 
 
 
