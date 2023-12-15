@@ -48,10 +48,6 @@ h2 {
   height: auto;
 
 }
-.title img2 {
-  width: 24em; 
-  height: auto; 
-}
 @media screen and (max-width: 600px)
 {
   .title {
