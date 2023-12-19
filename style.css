@@ -61,7 +61,7 @@ h2 {
   }
 }
 .body-text {
-  font-size: 1em;
+  font-size: .9em;
 }
 @media screen and (max-width: 600px) {
   .body-text {
