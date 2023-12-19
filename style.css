@@ -4,18 +4,18 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   margin-right: 4em;
 }
+@media screen and (max-width: 600px) {
+  body {
+    margin-right: 1em;
+  }
+}
 a {
   text-decoration: none;
   color: black;
 }
-
 a:hover {
   color: gray;
 }
-.navigator {
-  margin-bottom: 50px;
-}
-
 .text {
   margin-right: 40%;
 }
@@ -23,7 +23,6 @@ h2 {
   font-size: 20px;
   font-style: italic;
 }
-
 .header {
   margin-left: 0px;
   margin-top: 90px;
@@ -45,30 +44,33 @@ h2 {
 .title {
   width: 60%;
 }
+@media screen and (max-width: 600px) {
+  .title {
+    width: 95%;
+  }
+}
 .title img {
   max-width: 70%;
   /* width: 24em; */
   height: auto;
 }
-.body-text {
-  font-size: .9em;
-}
-@media screen and (max-width: 600px)
-{
-  body {
-    margin: 1em;
-  }
-  .title {
-    width: 95%;
-  }
+@media screen and (max-width: 600px) {
   .title img {
     width: 15em;
     height: auto;
   }
+}
+.body-text {
+  font-size: .9em;
+}
+@media screen and (max-width: 600px) {
   .body-text {
     width: 100%;
     font-size: .8em;
   }
+}
+@media screen and (max-width: 600px)
+{
   .about-text {
     width: 100%;
     font-size: 3vw;
@@ -76,9 +78,11 @@ h2 {
 }
 .margin {
   margin-top: 0;
-  margin-left: 50px;
+  margin-left: 60px;
 }
-
+.navigator {
+  margin-bottom: 50px;
+}
 
 
 /* video sizing */
@@ -114,9 +118,9 @@ h2 {
     margin-right: 0px;
   }
   .img-list img {
-  width: 175px;
-  height: 131.25px;
-  object-fit: cover;
+    width: 175px;
+    height: 131.25px;
+    object-fit: cover;
   }
 }
 
@@ -127,7 +131,6 @@ h2 {
   flex-wrap: wrap;
 }
 */
-
 
 .lightbox {
   position: fixed;
@@ -176,8 +179,13 @@ h2 {
 }
 
 .upcoming-img {
-  max-width: 100%;
+  width: 300px;
   height: auto;
+}
+@media screen and (max-width: 600px) {
+  .upcoming-img {
+    max-width: 100%;
+  }
 }
 
 .photo-credit {
